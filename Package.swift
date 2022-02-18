@@ -8,7 +8,7 @@ let package = Package(
         .macOS(SupportedPlatform.MacOSVersion.v10_12)
     ],
     products: [
-        .library(name: "web3.swift", targets: ["web3"]),
+        .library(name: "web3.swift", type: .dynamic, targets: ["web3"]),
     ],
     dependencies: [
         .package(name: "BigInt", url: "https://github.com/attaswift/BigInt", from: "5.0.0"),
